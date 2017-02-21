@@ -19,10 +19,13 @@ func main() {
 }
 
 func seq_search(a []int, k int) int {
-	for i := 0; i < len(a); i++ {
-		if a[i] == k {
-			return i
-		}
+	n, i := len(a), 0
+	a = append(a, k)
+	for a[i] != k {
+		i++
+	}
+	if i < n {
+		return i
 	}
 	/* Returning -1 if not found */
 	return -1
