@@ -7,16 +7,16 @@ import "fmt"
 func main() {
 	var n, m uint
 	fmt.Scanf("%d %d", &n, &m) // the numbers to be multiplied
-	res := russian_peasant(n, m)
+	res := russianPeasant(n, m)
 	fmt.Println(res)
 }
 
-func russian_peasant(n, m uint) uint {
+func russianPeasant(n, m uint) uint {
 	if n == 1 {
 		return m
 	}
 	if n&1 == 1 {
-		return m + russian_peasant(n>>1, m<<1)
+		return m + russianPeasant(n>>1, m<<1)
 	}
-	return russian_peasant(n>>1, m<<1)
+	return russianPeasant(n>>1, m<<1)
 }
