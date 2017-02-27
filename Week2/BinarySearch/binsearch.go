@@ -14,11 +14,11 @@ func main() {
 	}
 	var key int
 	fmt.Scanf("%d", &key) // key element to be searched for
-	index := bin_search(arr, key)
+	index := binSearch(arr, key)
 	fmt.Println(index)
 }
 
-func bin_search(a []int, k int) int {
+func binSearch(a []int, k int) int {
 	l, h := 0, len(a)-1
 	for l <= h {
 		m := (l + h) / 2

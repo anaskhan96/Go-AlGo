@@ -20,7 +20,7 @@ var tests = []testpair{{[]int{11, 17, 5, 3, 43, 22, 90, 65, 45, 32, 14, 89, 86, 
 /* Test Function */
 func TestBinSearch(t *testing.T) {
 	for _, pair := range tests {
-		actual := bin_search(pair.arr, pair.key)
+		actual := binSearch(pair.arr, pair.key)
 		if !reflect.DeepEqual(actual, pair.expected) {
 			t.Error("For", pair.arr, "expected", pair.expected, "got", actual)
 		}
