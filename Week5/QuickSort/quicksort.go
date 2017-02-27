@@ -12,15 +12,15 @@ func main() {
 		fmt.Scanf("%d", &num) // each element of the array
 		arr = append(arr, num)
 	}
-	sorted := quick_sort(arr)
+	sorted := quickSort(arr)
 	fmt.Println(sorted)
 }
 
-func quick_sort(a []int) []int {
+func quickSort(a []int) []int {
 	if len(a) > 1 {
 		s := partition(a)
-		quick_sort(a[:s])
-		quick_sort(a[s+1:])
+		quickSort(a[:s])
+		quickSort(a[s+1:])
 	}
 	return a
 }
