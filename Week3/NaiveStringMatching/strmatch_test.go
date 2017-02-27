@@ -21,7 +21,7 @@ var tests = []testpair{{"hello world", "wo", 6},
 /* Test Function */
 func TestStringMatching(t *testing.T) {
 	for _, pair := range tests {
-		actual := string_matching(pair.text, pair.pattern)
+		actual := stringMatching(pair.text, pair.pattern)
 		if !reflect.DeepEqual(actual, pair.index) {
 			t.Error("For", pair.text, "with the pattern", pair.pattern,
 				"expected", pair.index, "got", actual)

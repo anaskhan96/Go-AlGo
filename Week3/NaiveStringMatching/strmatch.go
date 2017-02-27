@@ -12,11 +12,11 @@ func main() {
 	text_, _ := bufio.NewReader(os.Stdin).ReadString('\n')            // input text
 	pattern_, _ := bufio.NewReader(os.Stdin).ReadString('\n')         // string to search for
 	text, pattern := text_[:len(text_)-1], pattern_[:len(pattern_)-1] // removing '\n' from both strings
-	index := string_matching(text, pattern)
+	index := stringMatching(text, pattern)
 	fmt.Println(index)
 }
 
-func string_matching(t, p string) int {
+func stringMatching(t, p string) int {
 outer:
 	for i := 0; i < len(t)-len(p)+1; i++ {
 		k := i
