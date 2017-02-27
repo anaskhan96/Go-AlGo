@@ -14,11 +14,11 @@ func main() {
 	}
 	var key int
 	fmt.Scanf("%d", &key) // key element to be searched for
-	index := seq_search(arr, key)
+	index := seqSearch(arr, key)
 	fmt.Println(index)
 }
 
-func seq_search(a []int, k int) int {
+func seqSearch(a []int, k int) int {
 	n, i := len(a), 0
 	a = append(a, k)
 	for a[i] != k {
