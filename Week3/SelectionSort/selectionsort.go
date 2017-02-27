@@ -12,11 +12,11 @@ func main() {
 		fmt.Scanf("%d", &num) // each element of the array
 		arr = append(arr, num)
 	}
-	sorted := selection_sort(arr)
+	sorted := selectionSort(arr)
 	fmt.Println(sorted)
 }
 
-func selection_sort(a []int) []int {
+func selectionSort(a []int) []int {
 	for i := 0; i < len(a); i++ {
 		small, pos := a[i], i
 		for j := i + 1; j < len(a); j++ {
