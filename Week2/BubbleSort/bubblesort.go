@@ -12,11 +12,11 @@ func main() {
 		fmt.Scanf("%d", &num) // each element of the array
 		arr = append(arr, num)
 	}
-	sorted := bubble_sort(arr)
+	sorted := bubbleSort(arr)
 	fmt.Println(sorted)
 }
 
-func bubble_sort(a []int) []int {
+func bubbleSort(a []int) []int {
 	for i := 0; i < len(a); i++ {
 		for j := 0; j < len(a)-i-1; j++ {
 			if a[j] > a[j+1] {
