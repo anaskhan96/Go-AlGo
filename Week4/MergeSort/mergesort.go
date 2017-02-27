@@ -12,18 +12,18 @@ func main() {
 		fmt.Scanf("%d", &num) // each element of the array
 		arr = append(arr, num)
 	}
-	sorted := merge_sort(arr)
+	sorted := mergeSort(arr)
 	fmt.Println(sorted)
 }
 
-func merge_sort(a []int) []int {
+func mergeSort(a []int) []int {
 	if len(a) < 2 {
 		return a
 	}
 	mid := len(a) / 2
 	/* Dividing */
-	x1 := merge_sort(a[:mid])
-	x2 := merge_sort(a[mid:])
+	x1 := mergeSort(a[:mid])
+	x2 := mergeSort(a[mid:])
 	/* Conquering and returning */
 	return merge(x1, x2)
 }

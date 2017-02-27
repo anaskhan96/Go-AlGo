@@ -20,7 +20,7 @@ var tests = []testpair{{[]int{11, 17, 5, 3, 43, 22, 90, 65, 45, 32, 14, 89, 86, 
 /* Test Function */
 func TestMergeSort(t *testing.T) {
 	for _, pair := range tests {
-		actual := merge_sort(pair.arr)
+		actual := mergeSort(pair.arr)
 		if !reflect.DeepEqual(actual, pair.expected) {
 			t.Error("For", pair.arr, "expected", pair.expected, "got", actual)
 		}
