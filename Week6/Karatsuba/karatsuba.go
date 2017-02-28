@@ -1,12 +1,5 @@
 /* Copyright, Anas Khan © 2017 */
 
-/* Note : This is an `almost` correct implementation of
-the algorithm since I've converted ints to strings
-for splitting the numbers, as instructed in our lab. */
-
-/* Improvements to the karatsuba module, retaining the
-strconv functions, are most welcome */
-
 package main
 
 import (
