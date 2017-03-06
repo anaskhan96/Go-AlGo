@@ -1,4 +1,4 @@
-# Go-AlGo
+# Go AlGo
 [![Build Status](https://travis-ci.org/anaskhan96/Go-AlGo.svg?branch=master)](https://travis-ci.org/anaskhan96/Go-AlGo)
 [![Go Report Card](https://goreportcard.com/badge/github.com/anaskhan96/Go-AlGo)](https://goreportcard.com/report/github.com/anaskhan96/Go-AlGo)
 
