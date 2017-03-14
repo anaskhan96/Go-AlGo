@@ -32,7 +32,7 @@ func main() {
 
 func callBfs(adj [][]int, visit []int) int {
 	components := 0
-	for i := 0; i < n; i++ {
+	for i := 0; i < len(adj); i++ {
 		if visit[i] == 0 {
 			components++
 			bfs(adj, i, visit)
