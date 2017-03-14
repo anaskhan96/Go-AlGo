@@ -5,7 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	var n, components, num int // size and number of compnents
+	var n, num int // n is the size of the dimension of the matrix
 	fmt.Scanf("%d", &n)
 	visit := make([]int, 0, 10)
 	adj := make([][]int, 0, 10) // the adjacency matrix
@@ -23,16 +23,18 @@ func main() {
 	for i := 0; i < n; i++ {
 		visit = append(visit, 0)
 	}
-	// Calling dfs() on all functions
-	for i := 0; i < n; i++ {
+	fmt.Println(callDfs(adj, visit))
+}
+
+func callDfs(adj [][]int, visit []int) int {
+	components := 0
+	for i := 0; i < len(adj); i++ {
 		if visit[i] == 0 {
 			components++
 			dfs(adj, i, visit)
 		}
 	}
-	fmt.Println()
-	// Printing the number of components
-	fmt.Println(components)
+	return components
 }
 
 func dfs(a [][]int, v int, visit []int) {
