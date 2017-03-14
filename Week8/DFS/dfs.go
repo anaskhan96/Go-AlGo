@@ -37,8 +37,7 @@ func main() {
 
 func dfs(a [][]int, v int, visit []int) {
 	visit[v] = 1
-	fmt.Printf("%d->", v) // dfs traversal
-	for w := 0; w < len(a); w++ {
+	for w := v; w < len(a); w++ {
 		if a[v][w] == 1 && visit[w] == 0 {
 			dfs(a, w, visit)
 		}
