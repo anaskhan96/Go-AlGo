@@ -23,6 +23,7 @@ func main() {
 	for i := 0; i < n; i++ {
 		visit = append(visit, 0)
 	}
+	// Printing the number of components
 	fmt.Println(callDfs(adj, visit))
 }
 
