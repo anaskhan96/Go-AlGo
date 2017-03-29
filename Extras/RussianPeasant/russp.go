@@ -5,7 +5,7 @@ package main
 import "fmt"
 
 func main() {
-	var n, m uint
+	var n, m uint              // the algorithm being implemented works on positive integers, so unsigned ints
 	fmt.Scanf("%d %d", &n, &m) // the numbers to be multiplied
 	res := russianPeasant(n, m)
 	fmt.Println(res)
