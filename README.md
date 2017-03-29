@@ -7,6 +7,7 @@ This repository contains the algorithms (implemented in [Go](https://golang.org/
 ## Testing
 
 Navigate into any particular algorithm's folder and run `go test` command to check if it's working correctly.
+
 You can also run `go test ./...` from the main directory itself to perform tests on all of them. Include `-v` for verbose.
 
 Example :
